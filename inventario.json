@@ -1,6 +1,7 @@
 {
-  "A1": {"nombre": "Pepsi", "precio": 1.50, "stock": 10},
-  "A2": {"nombre": "Coca-Cola", "precio": 1.75, "stock": 8},
-  "B1": {"nombre": "Papas Lays", "precio": 2.00, "stock": 5},
-  "B2": {"nombre": "Doritos", "precio": 2.25, "stock": 3}
+  "A1": {"nombre": "CocaC", "precio": 1.50, "stock": 5},
+  "B1": {"nombre": "Pepsi", "precio": 1.50, "stock": 4},
+  "C1": {"nombre": "Fanta", "precio": 1.25, "stock": 3},
+  "D1": {"nombre": "Malta", "precio": 2.00, "stock": 6},
+  "A2": {"nombre": "Chint", "precio": 1.80, "stock": 2}
 }
