@@ -1,0 +1,6 @@
+{
+  "A1": {"nombre": "Pepsi", "precio": 1.50, "stock": 10},
+  "A2": {"nombre": "Coca-Cola", "precio": 1.75, "stock": 8},
+  "B1": {"nombre": "Papas Lays", "precio": 2.00, "stock": 5},
+  "B2": {"nombre": "Doritos", "precio": 2.25, "stock": 3}
+}
