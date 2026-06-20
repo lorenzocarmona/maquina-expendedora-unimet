@@ -253,7 +253,7 @@ class MaquinaExpendedora:
         tarjeta = input("Introduzca su número de tarjeta: ").strip()
         
         if not tarjeta:
-            print("-> Operación cancelada. Regresando al catálogo.")
+            print(" Operación cancelada. Regresando al catálogo.")
             return
 
         self._contador_transacciones += 1
