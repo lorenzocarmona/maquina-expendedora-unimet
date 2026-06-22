@@ -1,3 +1,7 @@
+#Proyecto Maquina Expendedora con POO - Lorenzo Carmona y Jesús Feminella 
+#Algoritmos y Programación - Grupo 1-F
+
+
 import json
 import requests
 
