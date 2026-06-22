@@ -12,7 +12,7 @@ class Producto:
         self._precio = float(precio)  # Precio decimal del producto
         self._stock = int(stock)  # Unidades disponibles en la máquina
 
-    # Métodos Getter para acceder a los atributos privados
+    # Métodos "Get" para acceder a los atributos privados
     def get_codigo(self):
         return self._codigo
 
@@ -68,7 +68,7 @@ class Inventario:
                 # Instanciamos cada producto del JSON en la clase Producto
                 for cod, info in datos.items():
                     self._lista_productos[cod] = Producto(cod, info["nombre"], info["precio"], info["stock"])
-                print("-> ¡Catálogo sincronizado desde GitHub!")
+                print("- ¡Catálogo sincronizado desde GitHub!")
             else:
                 self._cargar_respaldo_local()
         except Exception:
@@ -125,10 +125,10 @@ class Transaccion:
                     Transaccion._tarjetas_validas[tarjeta_real] -= self._producto_seleccionado.get_precio()
                     return True, Transaccion._tarjetas_validas[tarjeta_real]
                 else:
-                    print("-> Tarjeta sin saldo suficiente.")
+                    print(" Tarjeta sin saldo suficiente.")
                     return False, 0
         
-        print("-> Tarjeta no reconocida o inválida.")
+        print(" Tarjeta no reconocida o inválida.")
         return False, 0
 
     # Orquestador del flujo de cobro y dispensación física del producto
@@ -200,7 +200,7 @@ class MaquinaExpendedora:
         self._inventario.cargar_desde_github()
         self.desplegar_menu()
 
-    # MÓDULO 1 VISUAL: Dibuja el catálogo estructurado en forma de matriz de ajedrez
+    # MÓDULO 1: Dibuja el catálogo estructurado en forma de matriz de ajedrez
     def _imprimir_matriz_catalogo(self):
         catalogo = self._inventario.obtener_catalogo()
         columnas = ["A", "B", "C", "D", "E"]
